@@ -1,0 +1,115 @@
+﻿<Window x:Class="SchoolManagementApp.SegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SchoolManagementApp"
+        mc:Ignorable="d"
+        
+        xmlns:uc="clr-namespace:SchoolManagementApp.UserControllerSchooll"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Name="loginWindow"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Title="Đăng kí" Height="500" Width="700">
+    <Grid Margin="0,0,0,-6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <uc:ControlBarUC Tag="{Binding Title,ElementName=loginWindow}"></uc:ControlBarUC>
+        </Grid>
+        <materialDesign:Card Width="446" Height="384" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid>
+                <Grid.Resources>
+                    <Style TargetType="Grid">
+                        <Setter Property="Margin" Value="15 15 15 0"></Setter>
+                    </Style>
+                </Grid.Resources>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" >
+                    <TextBox Width="300" HorizontalAlignment="Center" 
+                         VerticalAlignment="Bottom" 
+                         materialDesign:HintAssist.HelperText=""
+                         materialDesign:HintAssist.Hint="Tên đăng ký"
+                         Style="{StaticResource MaterialDesignFilledTextBox}">
+                        <TextBox.Text>
+                            <Binding Path="Text1" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                </Grid>
+                <Grid Grid.Row="1" >
+                    <TextBox Width="300" HorizontalAlignment="Center" 
+         VerticalAlignment="Bottom" 
+         materialDesign:HintAssist.HelperText=""
+         materialDesign:HintAssist.Hint="Email"
+         Style="{StaticResource MaterialDesignFilledTextBox}">
+                        <TextBox.Text>
+                            <Binding Path="Text1" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <StackPanel Width="300  " HorizontalAlignment="Center"  VerticalAlignment="Bottom" >
+                        <PasswordBox    
+                        materialDesign:HintAssist.Hint="Mật khẩu"
+                        materialDesign:TextFieldAssist.HasClearButton="True"
+                        IsEnabled="{Binding ElementName=RevealPasswordFilledEnabled, Path=IsChecked}"
+  
+                        Style="{StaticResource MaterialDesignFilledRevealPasswordBox}" />
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <StackPanel Width="300  " HorizontalAlignment="Center"  VerticalAlignment="Bottom" >
+                        <PasswordBox    
+        materialDesign:HintAssist.Hint="Nhâp lại mật khẩu"
+        materialDesign:TextFieldAssist.HasClearButton="True"
+        IsEnabled="{Binding ElementName=RevealPasswordFilledEnabled, Path=IsChecked}"
+  
+        Style="{StaticResource MaterialDesignFilledRevealPasswordBox}" />
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0"
+                        Width="150"
+                        Content="Đăng ký"
+                        IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                        Style="{StaticResource MaterialDesignRaisedButton}"  
+                        ToolTip="Resource name: MaterialDesignRaisedButton" />
+                    <Button Grid.Column="1"
+                        Width="150"                    
+                        Content="Thoát"
+                        IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                        Style="{StaticResource MaterialDesignRaisedButton}"
+                        ToolTip="Resource name: MaterialDesignRaisedButton" >
+                    </Button>
+                </Grid>
+            </Grid>
+        </materialDesign:Card>
+    </Grid>
+</Window>

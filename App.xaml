@@ -1,9 +1,23 @@
-﻿<Application x:Class="StudyManagementWpfApp.App"
+﻿<Application x:Class="SchoolManagementApp.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:StudyManagementWpfApp"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:SchoolManagementApp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Áp dụng theme Light với màu DeepPurple và Lime -->
+                <materialDesign:BundledTheme BaseTheme="Light"
+                                             PrimaryColor="DeepPurple"
+                                             SecondaryColor="Lime" />
+
+                <!-- Tải defaults của Material Design 2 -->
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign2.Defaults.xaml" />
+
+                <!-- Chú ý đường dẫn: "ResourceXAML" thay vì "RerourceXAML" -->
+                <ResourceDictionary Source="/RerourceXAML/MainResource.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

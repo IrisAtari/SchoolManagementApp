@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "IxHsrLbr1sM=",
+  "success": true,
+  "projectFilePath": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\SchoolManagementApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DuongTuan\\.nuget\\packages\\materialdesigncolors\\5.3.0\\materialdesigncolors.5.3.0.nupkg.sha512",
+    "C:\\Users\\DuongTuan\\.nuget\\packages\\materialdesignthemes\\5.3.0\\materialdesignthemes.5.3.0.nupkg.sha512",
+    "C:\\Users\\DuongTuan\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512",
+    "C:\\Users\\DuongTuan\\.nuget\\packages\\system.windows.interactivity.wpf\\2.0.20525\\system.windows.interactivity.wpf.2.0.20525.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.Windows.Interactivity.WPF 2.0.20525' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\SchoolManagementApp.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\SchoolManagementApp.csproj",
+      "libraryId": "System.Windows.Interactivity.WPF",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
+}

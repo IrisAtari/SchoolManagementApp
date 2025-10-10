@@ -1,0 +1,166 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF89506A-A569-4E96-99A6-8756D56EABCA}|SchoolManagementApp.csproj|d:\\co so nganh\\schoolmanagementapp\\schoolmanagementapp\\segisterwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FF89506A-A569-4E96-99A6-8756D56EABCA}|SchoolManagementApp.csproj|solutionrelative:segisterwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF89506A-A569-4E96-99A6-8756D56EABCA}|SchoolManagementApp.csproj|d:\\co so nganh\\schoolmanagementapp\\schoolmanagementapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF89506A-A569-4E96-99A6-8756D56EABCA}|SchoolManagementApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF89506A-A569-4E96-99A6-8756D56EABCA}|SchoolManagementApp.csproj|d:\\co so nganh\\schoolmanagementapp\\schoolmanagementapp\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF89506A-A569-4E96-99A6-8756D56EABCA}|SchoolManagementApp.csproj|solutionrelative:viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF89506A-A569-4E96-99A6-8756D56EABCA}|SchoolManagementApp.csproj|d:\\co so nganh\\schoolmanagementapp\\schoolmanagementapp\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FF89506A-A569-4E96-99A6-8756D56EABCA}|SchoolManagementApp.csproj|solutionrelative:loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF89506A-A569-4E96-99A6-8756D56EABCA}|SchoolManagementApp.csproj|d:\\co so nganh\\schoolmanagementapp\\schoolmanagementapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FF89506A-A569-4E96-99A6-8756D56EABCA}|SchoolManagementApp.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF89506A-A569-4E96-99A6-8756D56EABCA}|SchoolManagementApp.csproj|d:\\co so nganh\\schoolmanagementapp\\schoolmanagementapp\\usercontrollerschooll\\controlbaruc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FF89506A-A569-4E96-99A6-8756D56EABCA}|SchoolManagementApp.csproj|solutionrelative:usercontrollerschooll\\controlbaruc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF89506A-A569-4E96-99A6-8756D56EABCA}|SchoolManagementApp.csproj|d:\\co so nganh\\schoolmanagementapp\\schoolmanagementapp\\viewmodel\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF89506A-A569-4E96-99A6-8756D56EABCA}|SchoolManagementApp.csproj|solutionrelative:viewmodel\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF89506A-A569-4E96-99A6-8756D56EABCA}|SchoolManagementApp.csproj|d:\\co so nganh\\schoolmanagementapp\\schoolmanagementapp\\viewmodel\\controlbarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF89506A-A569-4E96-99A6-8756D56EABCA}|SchoolManagementApp.csproj|solutionrelative:viewmodel\\controlbarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF89506A-A569-4E96-99A6-8756D56EABCA}|SchoolManagementApp.csproj|d:\\co so nganh\\schoolmanagementapp\\schoolmanagementapp\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF89506A-A569-4E96-99A6-8756D56EABCA}|SchoolManagementApp.csproj|solutionrelative:viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SegisterWindow.xaml",
+              "DocumentMoniker": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\SegisterWindow.xaml",
+              "RelativeDocumentMoniker": "SegisterWindow.xaml",
+              "ToolTip": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\SegisterWindow.xaml",
+              "RelativeToolTip": "SegisterWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-10T13:45:12.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T10:14:47.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\ViewModel\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\BaseViewModel.cs",
+              "ToolTip": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\ViewModel\\BaseViewModel.cs",
+              "RelativeToolTip": "ViewModel\\BaseViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T10:14:17.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ControlBarViewModel.cs",
+              "DocumentMoniker": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\ViewModel\\ControlBarViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ControlBarViewModel.cs",
+              "ToolTip": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\ViewModel\\ControlBarViewModel.cs",
+              "RelativeToolTip": "ViewModel\\ControlBarViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T10:14:17.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\ViewModel\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\LoginViewModel.cs",
+              "ToolTip": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\ViewModel\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModel\\LoginViewModel.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwA4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T10:14:15.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainviewModel.cs",
+              "DocumentMoniker": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\ViewModel\\MainviewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MainviewModel.cs",
+              "ToolTip": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\ViewModel\\MainviewModel.cs",
+              "RelativeToolTip": "ViewModel\\MainviewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T10:14:15.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ControlBarUC.xaml",
+              "DocumentMoniker": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\UserControllerSchooll\\ControlBarUC.xaml",
+              "RelativeDocumentMoniker": "UserControllerSchooll\\ControlBarUC.xaml",
+              "ToolTip": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\UserControllerSchooll\\ControlBarUC.xaml",
+              "RelativeToolTip": "UserControllerSchooll\\ControlBarUC.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-10T10:13:19.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-10T10:13:12.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "LoginWindow.xaml",
+              "ToolTip": "D:\\Co so nganh\\SchoolManagementApp\\SchoolManagementApp\\LoginWindow.xaml",
+              "RelativeToolTip": "LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-10T10:13:00.791Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -3,23 +3,37 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:StudyManagementWpfApp"
+        xmlns:local="clr-namespace:SchoolManagementApp"
+        xmlns:uc="clr-namespace:SchoolManagementApp.UserControllerSchooll"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="450">
-    <Window.Resources>
-
-    </Window.Resources>
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Name="mainWindow"
+        DataContext="{StaticResource MainVM}"
+        ResizeMode="NoResize"
+        WindowStyle="None" 
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="400" Width="500">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding  LoadedWindowCommand }"     />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
     <Grid>
-        <Label BorderBrush="Aquamarine" BorderThickness="2" FontSize="36" Content="Quản Lý Giảng Đường" HorizontalAlignment="Center" Margin="20,20,20,0" VerticalAlignment="Top" Height="80"/>
-        <Button FontSize="20" Content="Đăng Ký" Margin="0,0,45,20" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="110"/>
-        <Button FontSize="20" Content="Đăng Nhập" HorizontalAlignment="Left" Margin="45,0,0,20" Height="50" VerticalAlignment="Bottom"/>
-
-        <Label Content="Tên Tài Khoản" HorizontalAlignment="Left" Margin="95,137,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
-        <TextBox HorizontalAlignment="Left" Margin="230,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="25"/>
-
-        <Label Content="Mật Khẩu" HorizontalAlignment="Left" Margin="95,167,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="230,167,0,0" VerticalAlignment="Top" Width="120" Height="25"/>
-
-
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <uc:ControlBarUC Tag="{Binding Title,ElementName=mainWindow}"></uc:ControlBarUC>
+            </Grid>
+        </Grid>
     </Grid>
 </Window>
