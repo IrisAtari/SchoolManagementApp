@@ -4,26 +4,92 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SchoolManagementApp"
+        xmlns:MaterialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Style="{StaticResource MaterialDesignWindow}"
-        Title="Đăng Ký" Height="550" Width="300">
+        TextOptions.TextRenderingMode="Auto"
+        WindowStartupLocation="CenterScreen"
+        Title="Đăng Ký" Height="450" Width="500">
     <Grid>
-        <Button Content="Đăng Ký" Margin="0,0,20,20" HorizontalAlignment="Right" Width="100" Height="30" VerticalAlignment="Bottom"/>
-
-        <Label Content="Tên tài khoản*" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="10,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
-
-        <Label Content="Email" HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
-        
-        <Label Content="Số điện thoại" HorizontalAlignment="Left" Margin="10,155,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
-        
-        <Label Content="Mật khẩu" HorizontalAlignment="Left" Margin="10,215,0,0" VerticalAlignment="Top"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="10,244,0,0" VerticalAlignment="Top" Width="280"/>
-        
-        <Label Content="Nhập lại Mật khẩu" HorizontalAlignment="Left" Margin="10,274,0,0" VerticalAlignment="Top"/>
-        <PasswordBox HorizontalAlignment="Center" Margin="0,303,0,0" VerticalAlignment="Top" Width="280"/>
-
+        <MaterialDesign:Card Width="450" Height="400" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid>
+                <Grid.Resources>
+                    <Style TargetType="Grid">
+                        <Setter Property="Margin" Value="15 15 15 0"></Setter>
+                    </Style>
+                </Grid.Resources>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" >
+                    <TextBox Width="300" HorizontalAlignment="Center" 
+                         VerticalAlignment="Bottom" 
+                         MaterialDesign:HintAssist.HelperText=""
+                         MaterialDesign:HintAssist.Hint="Tên tài khoản"
+                         Style="{StaticResource MaterialDesignFilledTextBox}">
+                        <TextBox.Text>
+                            <Binding Path="Text1" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                </Grid>
+                <Grid Grid.Row="1" >
+                    <TextBox Width="300" HorizontalAlignment="Center" 
+                             VerticalAlignment="Bottom" 
+                             MaterialDesign:HintAssist.HelperText=""
+                             MaterialDesign:HintAssist.Hint="Email"
+                             Style="{StaticResource MaterialDesignFilledTextBox}">
+                        <TextBox.Text>
+                            <Binding Path="Text1" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <StackPanel Width="300  " HorizontalAlignment="Center"  VerticalAlignment="Bottom" >
+                        <PasswordBox    
+                        MaterialDesign:HintAssist.Hint="Mật khẩu"
+                        MaterialDesign:TextFieldAssist.HasClearButton="True"
+                        IsEnabled="{Binding ElementName=RevealPasswordFilledEnabled, Path=IsChecked}"
+                        Style="{StaticResource MaterialDesignFilledRevealPasswordBox}" />
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <StackPanel Width="300  " HorizontalAlignment="Center"  VerticalAlignment="Bottom" >
+                        <PasswordBox    
+        MaterialDesign:HintAssist.Hint="Nhâp lại mật khẩu"
+        MaterialDesign:TextFieldAssist.HasClearButton="True"
+        IsEnabled="{Binding ElementName=RevealPasswordFilledEnabled, Path=IsChecked}"
+  
+        Style="{StaticResource MaterialDesignFilledRevealPasswordBox}" />
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0"
+                        Width="150"
+                        Content="Đăng ký"
+                        IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                        Style="{StaticResource MaterialDesignRaisedButton}"/>
+                    <Button Grid.Column="1"
+                        Width="150"                    
+                        Content="Thoát"
+                        IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                        Style="{StaticResource MaterialDesignRaisedButton}"
+                        x:Name="btnClose" Click="btnClose_Click"/>
+                </Grid>
+            </Grid>
+        </MaterialDesign:Card>
     </Grid>
 </Window>

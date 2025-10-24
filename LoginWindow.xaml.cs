@@ -11,7 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace StudyManagementWpfApp
+namespace SchoolManagementApp
 {
     /// <summary>
     /// Interaction logic for LoginWindow.xaml
@@ -21,8 +21,6 @@ namespace StudyManagementWpfApp
         public LoginWindow()
         {
             InitializeComponent();
-
-
         }
 
         QuanLyGiangDuongContext dbContext = new QuanLyGiangDuongContext();
@@ -97,6 +95,14 @@ namespace StudyManagementWpfApp
 
             //tkSua.HashMatKhau = key;
             //dbContext.SaveChanges();
+
+            RegisterWindow regWin = new RegisterWindow();
+            this.Hide();
+            regWin.ShowDialog();
+            if (!regWin.IsActive)
+            {
+                this.Show();
+            }
         }
     }
 }

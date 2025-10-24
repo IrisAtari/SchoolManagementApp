@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace StudyManagementWpfApp
+namespace SchoolManagementApp
 {
     /// <summary>
     /// Interaction logic for App.xaml
