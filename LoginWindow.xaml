@@ -4,24 +4,68 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StudyManagementWpfApp"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        
         mc:Ignorable="d"
         Style="{StaticResource MaterialDesignWindow}"
-        Title="Đăng Nhập" Height="300" Width="450">
+        DataContext="{StaticResource LoginVM}"
+        TextOptions.TextRenderingMode="Auto"
+        Title="Đăng Nhập" Width="450" Height="325">
     <Window.Resources>
-
+        
     </Window.Resources>
     <Grid>
-        <Label FontSize="36" Content="Quản Lý Giảng Đường" HorizontalAlignment="Center" Margin="20,20,20,0" VerticalAlignment="Top" Height="80"/>
-
-        <Button x:Name="btnDangKy" FontSize="20" Content="Đăng Ký" Margin="0,0,45,20" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="110" Click="btnDangKy_Click"/>
-        <Button x:Name="btnDangNhap" FontSize="20" Content="Đăng Nhập" HorizontalAlignment="Left" Margin="45,0,0,20" Height="50" VerticalAlignment="Bottom" Click="btnDangNhap_Click"/>
-
-        <Label Content="Tên Tài Khoản" HorizontalAlignment="Left" Margin="90,87,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
-        <TextBox x:Name="txtBoxAccName" HorizontalAlignment="Left" Margin="225,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="25"/>
-
-        <Label Content="Mật Khẩu" HorizontalAlignment="Left" Margin="90,117,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
-        <PasswordBox x:Name="txtBoxPassword" HorizontalAlignment="Left" Margin="225,117,0,0" VerticalAlignment="Top" Width="120" Height="25"/>
-
-
+        <materialDesign:Card Width="425" Height="275"  HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid>
+                <Grid.Resources>
+                    <Style TargetType="Grid">
+                        <Setter Property="Margin" Value="10 10 10 0"></Setter>
+                    </Style>
+                </Grid.Resources>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Label FontSize="36" Content="Quản Lý Giảng Đường" HorizontalAlignment="Center" VerticalAlignment="Top" Height="80"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <TextBox
+                        materialDesign:HintAssist.Hint="Tên Tài Khoản"
+                        AcceptsReturn="True"
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        TextWrapping="Wrap"
+                        x:Name="txtAccName"
+                        Text="{Binding Source={StaticResource LoginVM}, Path=AccName}"
+                        />
+                </Grid>
+                <Grid Grid.Row="2">
+                    <PasswordBox
+                        materialDesign:HintAssist.Hint="Mật Khẩu"
+                        materialDesign:PasswordBoxAssist.Password="{Binding Path=Password1Validated, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnExceptions=True}"
+                        Style="{StaticResource MaterialDesignFilledPasswordBox}" />
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" x:Name="btnDangKy" FontSize="20" 
+                            Content="Đăng Ký" Height="40" Click="btnDangKy_Click"
+                            Style="{StaticResource MaterialDesignRaisedButton}"
+                            Width="150"
+                            HorizontalAlignment="Left"
+                            />
+                    <Button Grid.Column="1"  x:Name="btnDangNhap" FontSize="20"
+                            Content="Đăng Nhập" Height="40" Click="btnDangNhap_Click"
+                            Style="{StaticResource MaterialDesignRaisedButton}"
+                            Width="150"
+                            HorizontalAlignment="Right"
+                            />
+                </Grid>
+            </Grid>
+        </materialDesign:Card>
     </Grid>
 </Window>

@@ -28,51 +28,51 @@ namespace StudyManagementWpfApp
         QuanLyGiangDuongContext dbContext = new QuanLyGiangDuongContext();
 
         //xử lý sự kiện nhấn nút đăng nhập
-        private void btnDangNhap_Click(object sender, RoutedEventArgs e)
-        {
-            //đảm bảo tên tk và mk không trống
-            if (txtBoxAccName.Text == string.Empty || txtBoxPassword.Password == string.Empty)
-            {
-                MessageBox.Show("Tài khoản và mật khẩu không được để trống!","Lỗi!", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-            else
-            {
-                //truy vấn dữ liệu
-                //var query =  from listAcc in dbContext.TaiKhoanNguoiDungs
-                //             where listAcc.TenNguoiDung == txtBoxAccName.Text
-                //             select listAcc;
-                var tkDangNhap = dbContext.TaiKhoanNguoiDungs.SingleOrDefault(tk => tk.TenNguoiDung ==  txtBoxAccName.Text);
-                if (tkDangNhap == null)
-                {
-                    MessageBox.Show("Tài khoản sai hoặc không tồn tại!", "Lỗi!", MessageBoxButton.OK, MessageBoxImage.Warning);
-                    return;
-                }
+        //private void btnDangNhap_Click(object sender, RoutedEventArgs e)
+        //{
+        //    //đảm bảo tên tk và mk không trống
+        //    if (txtBoxAccName.Text == string.Empty || txtBoxPassword.Password == string.Empty)
+        //    {
+        //        MessageBox.Show("Tài khoản và mật khẩu không được để trống!","Lỗi!", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //    }
+        //    else
+        //    {
+        //        //truy vấn dữ liệu
+        //        //var query =  from listAcc in dbContext.TaiKhoanNguoiDungs
+        //        //             where listAcc.TenNguoiDung == txtBoxAccName.Text
+        //        //             select listAcc;
+        //        var tkDangNhap = dbContext.TaiKhoanNguoiDungs.SingleOrDefault(tk => tk.TenNguoiDung ==  txtBoxAccName.Text);
+        //        if (tkDangNhap == null)
+        //        {
+        //            MessageBox.Show("Tài khoản sai hoặc không tồn tại!", "Lỗi!", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //            return;
+        //        }
 
-                //Tạo hash từ passwordbox
-                byte[] key = new byte[64];
-                using (SHA512 sha512 = SHA512.Create())
-                {
-                    byte[] hash = sha512.ComputeHash(System.Text.Encoding.UTF8.GetBytes(txtBoxPassword.Password));
-                    Array.Copy(hash, key, 64);
-                }
-                //So sánh chuỗi bit tạo từ hash với hash được lưu trữ trên csdl
-                int bitIndex = 0;
-                do
-                {
-                    if (tkDangNhap.HashMatKhau[bitIndex] != key[bitIndex])
-                    {
-                        MessageBox.Show("Mật khẩu không chính xác!", "Lỗi!", MessageBoxButton.OK, MessageBoxImage.Warning);
-                        return;
-                    }
-                    bitIndex++;
-                }
-                while (bitIndex<63);
+        //        //Tạo hash từ passwordbox
+        //        byte[] key = new byte[64];
+        //        using (SHA512 sha512 = SHA512.Create())
+        //        {
+        //            byte[] hash = sha512.ComputeHash(System.Text.Encoding.UTF8.GetBytes(txtBoxPassword.Password));
+        //            Array.Copy(hash, key, 64);
+        //        }
+        //        //So sánh chuỗi bit tạo từ hash với hash được lưu trữ trên csdl
+        //        int bitIndex = 0;
+        //        do
+        //        {
+        //            if (tkDangNhap.HashMatKhau[bitIndex] != key[bitIndex])
+        //            {
+        //                MessageBox.Show("Mật khẩu không chính xác!", "Lỗi!", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //                return;
+        //            }
+        //            bitIndex++;
+        //        }
+        //        while (bitIndex<63);
                 
-                MessageBox.Show("Đăng nhập thành công!", "Thành công!", MessageBoxButton.OK, MessageBoxImage.Information);
+        //        MessageBox.Show("Đăng nhập thành công!", "Thành công!", MessageBoxButton.OK, MessageBoxImage.Information);
                 
-            }
+        //    }
             
-        }
+        //}
 
         //Xử lý sự kiện nút đăng ký
         private void btnDangKy_Click(object sender, RoutedEventArgs e)
